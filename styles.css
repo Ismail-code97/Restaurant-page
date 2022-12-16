@@ -1,0 +1,229 @@
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 5rem;
+  background: linear-gradient(180deg, #adb5bd, #212529);
+  align-items: center;
+}
+
+.container h1 {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  font-family: oleo script;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem black;
+  color: #fe7f2d;
+}
+
+.nav-menu {
+  display: flex;
+
+  list-style: none;
+}
+
+.nav-menu li {
+  margin: 1rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-family: oswald;
+  background-color: #f6bd60;
+  color: #03045e;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.125rem;
+  cursor: pointer;
+}
+
+.menu-button {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-button span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  display: none;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer header {
+  display: flex;
+
+  justify-content: flex-end;
+  height: 5rem;
+
+  align-items: center;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+#side-drawer li {
+  margin: 0.5rem auto;
+}
+
+#side-drawer a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: oswald;
+  color: white;
+}
+
+main {
+  background: linear-gradient(360deg, #fefae0, #faedcd);
+  padding: 0.5rem;
+}
+
+.modal {
+  position: fixed;
+  top: 30%;
+  left: calc(50% - 20rem);
+  width: 35rem;
+
+  border-radius: 0.5rem;
+  box-shadow: 0.0625rem 0.0625rem 0.125rem black;
+  padding: 1rem;
+  background-color: rgba(255, 128, 0, 0.8);
+  display: none;
+}
+
+div .written-content {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.1rem !important;
+  font-size: 1.5rem !important;
+  font-family: oleo script;
+}
+
+#meal {
+  color: #f8f9fa !important;
+}
+
+.modal h1 {
+  color: #001219 !important;
+}
+
+.modal p {
+  color: #001219 !important;
+}
+
+.main-content h1 {
+  text-align: center;
+  font-family: oleo script;
+  font-size: 3rem;
+  color: #fe7f2d;
+}
+
+main ul {
+  margin: 2.5rem auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.food-content img {
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+}
+
+.food-content {
+  background-color: #f6bd60;
+  border-radius: 0.5rem;
+  box-shadow: 0.0625rem 0.0625rem 0.125rem black;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+
+.text-content {
+  text-align: center;
+  padding: 0.5rem 0;
+
+  font-family: oswald;
+}
+
+.text-content h2 {
+  margin: 0 0 1rem 0;
+}
+
+.text-content a {
+  text-decoration: none;
+  background-color: #ee9b00;
+  color: #03045e;
+  padding: 0.1875rem 0.5rem;
+}
+
+@media (max-width: 44.5rem) {
+  main ul {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .menu-button span {
+    display: block;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <div id="wrapper">
+    <body>
+      <div id="backdrop"></div>
+      <header class="container">
+        <h1>Golis Restaurant</h1>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="#">Browse Menu</a></li>
+            <li><a href="#">View Cart</a></li>
+          </ul>
+        </nav>
+        <a href="#side-drawer" class="menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+
+      <aside id="side-drawer">
+        <header>
+          <a href="#" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#">Browse Menu</a></li>
+            <li><a href="#">View Cart</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <aside class="modal" id="modal">
+          <div class="written-content">
+            <p>Item successfully added to cart</p>
+            <p id="meal"></p>
+            <p>Thank you and enjoy</p>
+          </div>
+        </aside>
+        <h1>Browse Our Delicious Meals</h1>
+
+        <ul>
+          <li class="food-content">
+            <img src="./images/Rice and Lamb.jpeg" />
+            <div class="text-content">
+              <h2>Rice and Lamb</h2>
+              <a id="rice-lamb" href="#">Add to Cart</a>
+            </div>
+          </li>
+
+          <li class="food-content">
+            <img src="./images/Pasta and Lamb.jpg" />
+            <div class="text-content">
+              <h2>Pasta and Lamb</h2>
+              <a id="pasta-lamb" href="#">Add to Cart</a>
+            </div>
+          </li>
+        </ul>
+      </main>
+    </body>
+  </div>
+</html>
